@@ -13,6 +13,9 @@ st.sidebar.markdown("""
 3. Simply upload a photo of food to receive calorie information.
 4. For additional details or a custom prompt, utilize the "Provide Prompt" input to access extra information via the Gemini Vision Pro model.
 """)
+# Guide for obtaining Google API Key if not available
+st.sidebar.subheader("Don't have a Google API Key?")
+st.sidebar.write("Visit [Google Makersuite](https://makersuite.google.com/app/apikey) and log in with your Google account. Then click on 'Create API Key'.")
 
 # Configure Google Gemini Pro Vision API with the API key from the input field
 api_key = st.sidebar.text_input("Enter your Google API Key:", key="api_key")
