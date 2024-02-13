@@ -21,6 +21,10 @@ if api_key:
 else:
     st.warning("Please enter your Google API Key.")
 
+# Guide for obtaining Google API Key if not available
+st.sidebar.subheader("Don't have a Google API Key?")
+st.sidebar.write("Visit [Google Makersuite](https://makersuite.google.com/app/apikey) and log in with your Google account. Then click on 'Create API Key'.")
+
 ## Function to load Google Gemini Pro Vision API And get response
 def get_gemini_response(input, image, prompt):
     model = genai.GenerativeModel('gemini-pro-vision')
