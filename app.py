@@ -3,7 +3,7 @@ import google.generativeai as genai
 from PIL import Image
 
 # Set page configuration
-st.set_page_config(page_title="Gemini Health App")
+st.set_page_config(page_title="Gemini NutriAI 🍽️")
 
 # Sidebar guide
 st.sidebar.markdown("""
@@ -44,7 +44,7 @@ def input_image_setup(uploaded_file):
         raise FileNotFoundError("No file uploaded")
 
 # Initialize our Streamlit app
-st.title("Gemini Health App")
+st.title("Gemini NutriAI 🍽️")
 
 input_text = st.text_input("Input Prompt: ", key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
